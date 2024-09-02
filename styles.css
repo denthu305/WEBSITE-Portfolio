@@ -1,12 +1,14 @@
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color: #382A2A;
+    background-color: #ffffff;
+    
+   
 }
 
 .Header{
     position: fixed;
     text-align: right; /*shifts to the right*/
-    color: #FFDB59;
+    color: #8d6e86;
     font-size: 30px; /*changes font size to 30px*/
     word-spacing: 50px; /*adds spaces between the words*/
     display: flex; /*flex box that makes sure everything stays as a row despite change in screen size*/
@@ -23,19 +25,21 @@ body{
 }
 
 .init{
-    border-radius: 50%;
-    background-color: #FFDB59;
-    height: 50px;
-    width: 50px;
-    margin-top: 25px; /*places shape lower by 5px */
-    margin-right: auto; /*makes it so that it is positioned right for different sized screens*/
-    margin-left: 15px; /*makes it to the far left*/
+    border-radius: 100%;
+    background-image:  url('./assets/logo2.jpg'); /* Replace with your logo path */
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: 40px;
       
 }
 
 h1{
     text-align: center; /*centers the h1 texts*/
-    color: #FFDB59;
+    color: #8d6e86;
     font-size: 50px;
 }
 
@@ -59,7 +63,8 @@ h1{
     height: inherit;
 }
 
-.circle{
+
+/* .circle{
     border-radius: 50%; /*curves into circle*/
     background-repeat: no-repeat;
     height: 500px; /*size of circle*/
@@ -67,7 +72,10 @@ h1{
     position: relative;
     margin-left: 5px; /*places shape right 50px*/
     margin-right: auto;
-}
+} */
+
+
+
 
 .propic{
     border-radius: 0%;
@@ -91,13 +99,24 @@ hr {
 
 .flex-container {
     display: flex;
-    background-color: black;
+    background-color: rgb(91, 90, 90);
     height: 100px;
     width: 100%;
     left: 0;
     bottom: 0;
     position: fixed;
 }
+
+.flex-container-top {
+    display: flex;
+    background-color: rgb(91, 90, 90);
+    height: 100px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
 
 .contact-info {
     color: white;
@@ -108,7 +127,7 @@ hr {
 .socials button {
     height: 50px;
     width: 50px;
-    background-color: blue;
+    background-color: #8d6e86;
     border: none; 
     padding: 0;
 }
@@ -129,7 +148,7 @@ hr {
 }
 
 .SectionB{
-    background-color: #FFDB59;
+    background-color: #8d6e86;
     height: 400px;
     padding: 25px;
 }
@@ -163,7 +182,7 @@ hr {
 
 .Header .buttons a{
     text-decoration: none;
-    color: #FFDB59;
+    color: #8d6e86;
     text-align: right;
 }
 
@@ -253,11 +272,11 @@ hr {
 
 .projects button{
     border-radius: 24px 24px 24px 24px;
-    background-color:#FFDB59;
+    background-color:#8d6e86;
 }
 
 .blog a{
-    color:#FFDB59;
+    color:#8d6e86;
     text-align: center;
     padding: 100px;
 }
@@ -276,7 +295,7 @@ hr {
 
 .goldBanner{
     height: 40px; 
-    background-color: #FFDB59; 
+    background-color: #8d6e86; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +350,7 @@ hr {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(101, 98, 98, 0.247);
 }
 
 /* Caption text */
@@ -409,4 +428,74 @@ hr {
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+
+
+
+/* Centering the buttons container */
+.toclick {
+    position: absolute; 
+    top: 300px; /* Adjust distance from the top */
+    left: 600px;
+    display: flex;
+    gap: 50px;
+    
+}
+/* Keyframes for the pop-up effect */
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.toclick button {
+    width: 70px; /* Set width of the button */
+    height: 70px; /* Set height of the button (same as width) */
+    border-radius: 50%; /* Makes the button circular */
+    background-color: #ffffff; /* Set a background color */
+    display: flex;
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    padding: 0; /* Remove default padding */
+    opacity: 0; /* Start hidden */
+    transform: scale(0.5); /* Start scaled down */
+    animation: popUp 2s forwards; /* Apply the animation */
+}
+
+.toclick button:nth-child(1) {
+    animation-delay: 0s; /* Start immediately */
+}
+
+.toclick button:nth-child(2) {
+    animation-delay: 3s; /* Start after 0.3s */
+}
+
+.toclick button:nth-child(3) {
+    animation-delay: 6s; /* Start after 0.6s */
+}
+
+.toclick button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 0px; 
+    border-radius: 90%; /* Makes the button circular */
+}
+
+.toclick button img {
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    border-radius: 90%; /* Optional: If the image should also be circular */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Arrange button and text vertically */
+    align-items: center; /* Center the content horizontally */
+    animation: popUp 1.5s forwards;
 }
