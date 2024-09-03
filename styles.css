@@ -436,7 +436,7 @@ hr {
 /* Centering the buttons container */
 .toclick {
     position: absolute;
-    top: 325px; /* Adjust distance from the top*/ 
+    top: 305px; /* Adjust distance from the top*/ 
     left: 600px;
     display: flex;
     gap: 50px;
@@ -503,17 +503,36 @@ hr {
 
 /* styles.css */
 .index-background {
-    background-image: url('./assets/DENISE.jpg');
+    background-image: url('./assets/DT3.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    align-items: center;
     
 }
 
 .contacts{
     color: rgb(0, 0, 0);
     font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0; /* Position at the bottom of the screen */
+    left: 0;
+    width: 100%; /* Ensures the footer spans the full width */
+    background-color: f4f4f4; /* Optional: Background color with transparency */
+    color: black; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around the text */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+
+footer a {
+    color: rgb(127, 123, 123); /* Changes link color to black */
+    
 }
