@@ -435,8 +435,8 @@ hr {
 
 /* Centering the buttons container */
 .toclick {
-    position: absolute; 
-    top: 300px; /* Adjust distance from the top */
+    position: absolute;
+    top: 325px; /* Adjust distance from the top*/ 
     left: 600px;
     display: flex;
     gap: 50px;
@@ -499,4 +499,21 @@ hr {
     flex-direction: column; /* Arrange button and text vertically */
     align-items: center; /* Center the content horizontally */
     animation: popUp 1.5s forwards;
+}
+
+/* styles.css */
+.index-background {
+    background-image: url('./assets/DENISE.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contacts{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
