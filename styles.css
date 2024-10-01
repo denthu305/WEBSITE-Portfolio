@@ -1,8 +1,23 @@
 body{
     font-family: 'Times New Roman', Times, serif;
     background-color: #f5f4ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
     
    
+}
+
+.typing-container {
+    border-right: 2px solid #333; /* Cursor effect */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the text */
+}
+
+.typing-container i {
+    display: inline-block;
 }
 
 .Header{
@@ -39,7 +54,6 @@ body{
 
 h1{
     text-align: center; /*centers the h1 texts*/
-    color: #8d6e86;
     font-size: 50px;
 }
 
@@ -436,8 +450,8 @@ hr {
 /* Centering the buttons container */
 .toclick {
     position: absolute;
-    top: 305px; /* Adjust distance from the top*/ 
-    left: 600px;
+   /* top: 305px;  Adjust distance from the top*/ 
+    /* left: 600px;*/
     display: flex;
     gap: 50px;
     
@@ -503,7 +517,7 @@ hr {
 
 /* styles.css */
 .index-background {
-    background-image: url('./assets/DT3.png');
+    background-image: url('./assets/DT6.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
