@@ -11,9 +11,11 @@ body{
 }
 
 .typing-container {
-    border-right: 2px solid #333; /* Cursor effect */
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide the text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    z-index: 2; /* Higher z-index to appear in front */
 }
 
 .typing-container i {
@@ -517,7 +519,7 @@ hr {
 
 /* styles.css */
 .index-background {
-    background-image: url('./assets/DT7.png');
+    background-image: url('./assets/noname.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -547,6 +549,30 @@ footer {
 }
 
 footer a {
-    color: rgb(127, 123, 123); /* Changes link color to black */
+    color: rgb(255, 250, 250); /* Changes link color to black */
     
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    z-index: 1;
+    position: relative;
+}
+
+.center-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.center-button:hover {
+    background-color: transparent;
 }

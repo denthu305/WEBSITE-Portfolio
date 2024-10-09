@@ -27,16 +27,24 @@ function showSlides() {
     setTimeout(showSlides, 3000); 
 }
 
-const text = "WELCOME TO MY WEB PORTFOLIO";
-let index = 0;
+const text = ". . . click me   "; // The text to be typed
+let index = 0; // Initialize index
 
 function type() {
-    const typingElement = document.querySelector("#typing-text strong");
+    const typingElement = document.querySelector("#typing-text");
     
+    // Check if the index is less than the text length
     if (index < text.length) {
-        typingElement.innerHTML += text.charAt(index);
-        index++;
+        typingElement.innerHTML += text.charAt(index); // Append the next character
+        index++; // Increment the index
         setTimeout(type, 100); // Adjust speed here
+    } else {
+        // Once the text is fully typed, wait a bit before restarting
+        setTimeout(() => {
+            typingElement.innerHTML = ""; // Clear the text
+            index = 0; // Reset index
+            type(); // Restart typing effect
+        }, 1000); // Adjust delay before restart (in milliseconds)
     }
 }
 
