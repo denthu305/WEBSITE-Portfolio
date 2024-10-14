@@ -54,4 +54,8 @@ window.onload = function() {
     showSlides(); // Start slideshow
 };
 
+window.addEventListener('load', function() {
+    document.body.classList.add('fade-in');
+  });
+
 

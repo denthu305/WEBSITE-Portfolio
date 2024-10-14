@@ -553,26 +553,3 @@ footer a {
     
 }
 
-.container {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Full viewport height */
-    z-index: 1;
-    position: relative;
-}
-
-.center-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    background-color: transparent;
-    color: transparent;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.center-button:hover {
-    background-color: transparent;
-}
